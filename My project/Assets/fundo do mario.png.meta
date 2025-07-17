@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fundo do mario_0: 5874892162314880900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
