@@ -2,18 +2,21 @@ using UnityEngine;
 
 public class Trocadepainel : MonoBehaviour
 {
-    public GameObject menuGeral;   // Arraste o objeto Menugeral
-    public GameObject jogoPlay;    // Arraste o objeto JogoPlay
+    public GameObject Menugeral;   // Arraste o objeto Menugeral
+    public GameObject Jogoplay;    // Arraste o objeto JogoPlay
+
+    void Start()
+    {
+        // Garante que o menu apareça ao iniciar a cena e o jogo fique escondido
+        Menugeral.SetActive(true);
+        Jogoplay.SetActive(false);
+    }
 
     public void IrParaJogo()
     {
-        menuGeral.SetActive(false); // Esconde o menu
-        jogoPlay.SetActive(true);   // Mostra o jogo
+        Menugeral.SetActive(false); // Esconde o menu
+        Jogoplay.SetActive(true);   // Mostra o jogo
     }
 
-    public void VoltarParaMenu()
-    {
-        jogoPlay.SetActive(false);  // Esconde o jogo
-        menuGeral.SetActive(true);  // Mostra o menu
-    }
+   
 }
